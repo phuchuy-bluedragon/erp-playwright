@@ -8,7 +8,7 @@ test('Verify admin can login and see raw material codes', async ({ page }) => {
   await loginPage.goto();
 
   // 2. Thực hiện đăng nhập
-  await loginPage.login('admin@erp.com', 'Admin@2025');
+  await loginPage.login(process.env.ADMIN_EMAIL!, process.env.ADMIN_PASSWORD!);
 
   // 3. Thao tác điều hướng
   await loginPage.clickMainSection();

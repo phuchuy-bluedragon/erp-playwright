@@ -8,7 +8,7 @@ test.describe('Fabric ERP - Add Business', () => {
     test.beforeEach(async ({ page }) => {
         const loginPage = new LoginPage(page);
         await loginPage.goto();
-        await loginPage.login('admin@erp.com', 'Admin@2025');
+        await loginPage.login(process.env.ADMIN_EMAIL!, process.env.ADMIN_PASSWORD!);
         await loginPage.clickMainSection();
     });
 
