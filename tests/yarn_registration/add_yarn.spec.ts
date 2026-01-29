@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import { YarnPage } from './../../pages/YarnRegistrationPage';
 import { yarnTestData } from '../../types/yarn_items/yarn';
 
-test.describe('Fabric ERP - Add Yarn', () => {
+test.describe('ERP - Add Yarn', () => {
 
     test.beforeEach(async ({ page }) => {
         const loginPage = new LoginPage(page);
@@ -16,7 +16,7 @@ test.describe('Fabric ERP - Add Yarn', () => {
     for (const [i, data] of yarnTestData.entries()) {
 
         // Đảm bảo tiêu đề test là DUY NHẤT bằng cách thêm index i
-        test(`Case ${i + 1}: Create fabric item - ${data.yarnPart}`, async ({ page }) => {
+        test(`Case ${i + 1}: Create yarn item - ${data.yarnPart}`, async ({ page }) => {
             const yarnPage = new YarnPage(page);
 
             await page.getByRole('link', { name: '원사 코드' }).click();

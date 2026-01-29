@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import { BusinessPage } from '../../pages/BusinessRegistrationPage';
 import { businessTestData } from '../../types/business_items/business';
 
-test.describe('Fabric ERP - Add Business', () => {
+test.describe('ERP - Add Business', () => {
 
     test.beforeEach(async ({ page }) => {
         const loginPage = new LoginPage(page);
@@ -16,7 +16,7 @@ test.describe('Fabric ERP - Add Business', () => {
     for (const [i, data] of businessTestData.entries()) {
 
         // Đảm bảo tiêu đề test là DUY NHẤT bằng cách thêm index i
-        test(`Case ${i + 1}: Create fabric item - ${data.businessPart}`, async ({ page }) => {
+        test(`Case ${i + 1}: Create business item - ${data.businessPart}`, async ({ page }) => {
             const businessPage = new BusinessPage(page);
 
             await page.getByRole('link', { name: '업체코드' }).click();

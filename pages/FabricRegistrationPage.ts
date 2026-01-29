@@ -41,19 +41,6 @@ export class FabricPage {
         await this.page.locator('input[name="remarks"]').fill(data.remarks);
     }
 
-    // async fillForm2(data: RawFabricItemData2) {
-    //     await this.selectOption('몸판 등 구분', data.fabricPart);
-    //     await this.selectOption('업체 구분', data.businessCategory);
-    //     await this.selectOption('제작처 (업체명)', data.provider);
-    //     await this.selectOption('구매단위', data.purchaseUnit);
-    //     await this.selectOption('판매단위', data.saleUnit);
-    //     await this.selectOption('판매종료', data.isSaleEnded);
-
-    //     await this.page.getByRole('textbox', { name: '구매 시 품목명' }).fill(data.purchaseItemName);
-    //     await this.page.getByRole('textbox', { name: '판매 시 품목명' }).fill(data.saleItemName);
-    //     await this.page.getByRole('textbox', { name: '비고' }).fill(data.remarks);
-    // }
-
     async submit() {
         await this.addBtn.click();
     }

@@ -3,7 +3,7 @@ import { LoginPage } from '../../pages/LoginPage';
 import { RawFabricPage } from '../../pages/RawFabricRegistrationPage';
 import { rawFabricTestData } from '../../types/raw_fabric_items/raw_fabric_1';
 
-test.describe('Fabric ERP - Add Raw Fabric (품목)', () => {
+test.describe('ERP - Add Raw Fabric (품목)', () => {
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -16,7 +16,7 @@ test.describe('Fabric ERP - Add Raw Fabric (품목)', () => {
   for (const [i, data] of rawFabricTestData.entries()) {
 
     // Đảm bảo tiêu đề test là DUY NHẤT bằng cách thêm index i
-    test(`Case ${i + 1}: Create fabric item - ${data.fabricPart}`, async ({ page }) => {
+    test(`Case ${i + 1}: Create raw fabric item - ${data.fabricPart}`, async ({ page }) => {
       const fabricPage = new RawFabricPage(page);
 
       await page.getByRole('link', { name: '품목(생지) 코드' }).click();

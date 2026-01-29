@@ -3,7 +3,7 @@ import { LoginPage } from '../../pages/LoginPage';
 import { FabricPage } from '../../pages/FabricRegistrationPage';
 import { fabricTestData } from '../../types/fabric_items/fabric';
 
-test.describe('Fabric ERP - Add Fabric (품목)', () => {
+test.describe('ERP - Add Fabric (품목)', () => {
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -33,6 +33,8 @@ test.describe('Fabric ERP - Add Fabric (품목)', () => {
       await fabricPage.fillForm1(data);
 
       await fabricPage.submit();
+
+      await expect(page.getByText('Fabric created successfully')).toBeVisible();
     });
   }
 });
