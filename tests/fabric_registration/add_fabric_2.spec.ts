@@ -23,6 +23,8 @@ test.describe('ERP - Add Fabric (품목)', () => {
 
       await fabricPage.registerBtn2.click();
 
+      await page.waitForTimeout(2000);
+
       if (i % 2 == 0) {
         await page.locator('div').filter({ hasText: /^몸판$/ }).first().click();
       } else {

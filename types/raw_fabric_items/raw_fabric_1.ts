@@ -11,7 +11,6 @@ export interface YarnComposition {
 export interface RawFabricItemData1 {
     fabricPart: string;
     businessCategory: string;
-    provider: string;
     prodUnit: string;
     saleUnit: string;
     isSaleEnded: string;
@@ -26,7 +25,6 @@ export const rawFabricTestData: RawFabricItemData1[] = [
     {
         fabricPart: '몸판',
         businessCategory: '원사업체',
-        provider: 'Reese Moody',
         prodUnit: 'KG',
         saleUnit: 'YD',
         isSaleEnded: 'N',
@@ -40,7 +38,6 @@ export const rawFabricTestData: RawFabricItemData1[] = [
     {
         fabricPart: '스와치',
         businessCategory: '가공공장',
-        provider: '업체명1',
         prodUnit: 'YD',
         saleUnit: 'EA',
         isSaleEnded: 'N',

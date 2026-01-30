@@ -24,7 +24,9 @@ export class RawFabricPage {
     async fillForm1(data: RawFabricItemData1) {
         await this.selectOption('몸판 등 구분', data.fabricPart);
         await this.selectOption('업체 구분', data.businessCategory);
-        await this.selectOption('제작처 (업체명)', data.provider);
+        await this.page.getByRole('combobox', { name: "제작처 (업체명)" }).click();
+        await this.page.getByRole('option').first().click();
+
         await this.selectOption('생산단위', data.prodUnit);
         await this.selectOption('판매단위', data.saleUnit);
         await this.selectOption('판매종료', data.isSaleEnded);
@@ -36,7 +38,8 @@ export class RawFabricPage {
     async fillForm2(data: RawFabricItemData2) {
         await this.selectOption('몸판 등 구분', data.fabricPart);
         await this.selectOption('업체 구분', data.businessCategory);
-        await this.selectOption('제작처 (업체명)', data.provider);
+        await this.page.getByRole('combobox', { name: "제작처 (업체명)" }).click();
+        await this.page.getByRole('option').first().click();
         await this.selectOption('구매단위', data.purchaseUnit);
         await this.selectOption('판매단위', data.saleUnit);
         await this.selectOption('판매종료', data.isSaleEnded);
