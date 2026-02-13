@@ -31,7 +31,9 @@ export class ClientPage {
         await this.page.setInputFiles('input[type="file"]', 'tests/fixtures/image_test.png');
 
         // 주소
-        await this.page.locator('input[name="headOfficeAddress"]').fill(data.headOfficeAddress);
+        // await this.page.locator('input[name="headOfficeAddress"]').fill(data.headOfficeAddress);
+
+        
         await this.page.getByRole('textbox', { name: '상세 주소' }).fill(data.detailedAddress);
 
         // 회사 정보
