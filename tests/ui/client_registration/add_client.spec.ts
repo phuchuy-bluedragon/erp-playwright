@@ -1,7 +1,7 @@
-import { LoginPage } from '../../pages/LoginPage';
+import { LoginPage } from '../../../pages/LoginPage';
 import { test, expect } from '@playwright/test';
-import { ClientPage } from '../../pages/ClientRegistrationPage';
-import { clientTestData } from '../../types/client_items/client';
+import { ClientPage } from '../../../pages/ClientRegistrationPage';
+import { clientTestData } from '../../../types/client_items/client';
 
 test.describe('ERP - Add Client', () => {
 

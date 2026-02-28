@@ -1,7 +1,7 @@
-import { LoginPage } from './../../pages/LoginPage';
+import { LoginPage } from '../../.././pages/LoginPage';
 import { test, expect } from '@playwright/test';
-import { StaffPage } from './../../pages/StaffRegistrationPage';
-import { staffTestData } from '../../types/staff_items/staff';
+import { StaffPage } from '../../../pages/StaffRegistrationPage';
+import { staffTestData } from '../../../types/staff_items/staff';
 
 test.describe('ERP - Add Staff', () => {
 

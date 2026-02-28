@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
-import { RawFabricPage } from '../../pages/RawFabricRegistrationPage';
-import { rawFabricTestData } from '../../types/raw_fabric_items/raw_fabric_2';
+import { LoginPage } from '../../.././pages/LoginPage';
+import { RawFabricPage } from '../../../pages/RawFabricRegistrationPage';
+import { rawFabricTestData } from '../../../types/raw_fabric_items/raw_fabric_1';
 
-test.describe('ERP - Add Raw Fabric (완사입)', () => {
+test.describe('ERP - Add Raw Fabric (품목)', () => {
 
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -17,16 +17,17 @@ test.describe('ERP - Add Raw Fabric (완사입)', () => {
 
     // Đảm bảo tiêu đề test là DUY NHẤT bằng cách thêm index i
     test(`Case ${i + 1}: Create raw fabric item - ${data.fabricPart}`, async ({ page }) => {
-      const rawFabricPage = new RawFabricPage(page);
+      const fabricPage = new RawFabricPage(page);
 
       await page.getByRole('link', { name: '품목(생지) 코드' }).click();
 
-      await rawFabricPage.registerBtn2.click();
+      await fabricPage.registerBtn1.click();
 
       // Truyền finalData (đã có name mới) vào form
-      await rawFabricPage.fillForm2(data);
+      await fabricPage.fillForm1(data);
+      await fabricPage.selectAndFillYarns(data.yarns);
 
-      await rawFabricPage.submit();
+      await fabricPage.submit();
 
       await expect(page.getByText('Successfully created!')).toBeVisible();
     });

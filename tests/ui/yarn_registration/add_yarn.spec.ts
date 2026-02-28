@@ -1,7 +1,7 @@
-import { LoginPage } from './../../pages/LoginPage';
+import { LoginPage } from '../../.././pages/LoginPage';
 import { test, expect } from '@playwright/test';
-import { YarnPage } from './../../pages/YarnRegistrationPage';
-import { yarnTestData } from '../../types/yarn_items/yarn';
+import { YarnPage } from '../../../pages/YarnRegistrationPage';
+import { yarnTestData } from '../../../types/yarn_items/yarn';
 
 test.describe('ERP - Add Yarn', () => {
 

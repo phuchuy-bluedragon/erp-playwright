@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
-import { FabricPage } from '../../pages/FabricRegistrationPage';
-import { fabricTestData } from '../../types/fabric_items/fabric';
+import { LoginPage } from '../../.././pages/LoginPage';
+import { FabricPage } from '../../../pages/FabricRegistrationPage';
+import { fabricTestData } from '../../../types/fabric_items/fabric';
 
 test.describe('ERP - Add Fabric (품목)', () => {
 
@@ -21,7 +21,7 @@ test.describe('ERP - Add Fabric (품목)', () => {
 
       await page.getByRole('link', { name: '원단 코드' }).first().click();
 
-      await fabricPage.registerBtn2.click();
+      await fabricPage.registerBtn1.click();
 
       await page.waitForTimeout(2000);
 

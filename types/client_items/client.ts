@@ -11,7 +11,7 @@ export interface ClientItemData {
     businessRegistrationNumber: string;
     password: string;
     // businessLicenseFile: string;
-    // headOfficeAddress: string;
+    headOfficeAddress: string;
     detailedAddress: string;
     salesUrl: string;
     companyEmail: string;
@@ -35,12 +35,12 @@ export const clientTestData: ClientItemData[] = [
         businessRegistrationNumber: `${Math.floor(100 + Math.random() * 900)}${Math.floor(10 + Math.random() * 90)}${Math.floor(10000 + Math.random() * 90000)}`,
         password: 'test12345',
         // businessLicenseFile: `license_${Math.random().toString(36).slice(2, 8)}.pdf`,
-        // headOfficeAddress: `서울특별시 강남구 테헤란로 ${Math.floor(1 + Math.random() * 300)}, ${Math.floor(2 + Math.random() * 20)}층`,
+        headOfficeAddress: `서울특별시 강남구 테헤란로 152, 강남파이낸스센터 15층 1503호`,
         detailedAddress: `${Math.floor(Math.random() * 5)}`,
         salesUrl: `https://shop.${Math.random().toString(36).slice(2, 6)}.com`,
         companyEmail: `${Math.random().toString(36).slice(2, 7)}@gmail.com`,
         contactName: ['김민수', '이서연', '박지훈', '최유진', '정도현'][Math.floor(Math.random() * 5)],
-        contactPosition:'회장',
+        contactPosition: '회장',
         contactPhoneNumber: `010-${Math.floor(1000 + Math.random() * 9000)}-${Math.floor(1000 + Math.random() * 9000)}`,
         groupChatConsent: 'Y',
         referrerCompany: `RefCompany_${Math.random().toString(36).slice(2, 6)}`,
@@ -56,7 +56,7 @@ export const clientTestData: ClientItemData[] = [
         businessRegistrationNumber: `${Math.floor(100 + Math.random() * 900)}${Math.floor(10 + Math.random() * 90)}${Math.floor(10000 + Math.random() * 90000)}`,
         password: 'test12345',
         // businessLicenseFile: `license_${Math.random().toString(36).slice(2, 8)}.pdf`,
-        // headOfficeAddress: `서울특별시 강남구 테헤란로 ${Math.floor(1 + Math.random() * 300)}, ${Math.floor(2 + Math.random() * 20)}층`,
+        headOfficeAddress: `서울특별시 강남구 테헤란로 152, 강남파이낸스센터 15층 1503호`,
         detailedAddress: `${Math.floor(Math.random() * 5)}`,
         salesUrl: `https://shop.${Math.random().toString(36).slice(2, 6)}.com`,
         companyEmail: `${Math.random().toString(36).slice(2, 7)}@gmail.com`,

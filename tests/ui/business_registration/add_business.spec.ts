@@ -1,7 +1,7 @@
-import { LoginPage } from '../../pages/LoginPage';
+import { LoginPage } from '../../.././pages/LoginPage';
 import { test, expect } from '@playwright/test';
-import { BusinessPage } from '../../pages/BusinessRegistrationPage';
-import { businessTestData } from '../../types/business_items/business';
+import { BusinessPage } from '../../../pages/BusinessRegistrationPage';
+import { businessTestData } from '../../../types/business_items/business';
 
 test.describe('ERP - Add Business', () => {
 

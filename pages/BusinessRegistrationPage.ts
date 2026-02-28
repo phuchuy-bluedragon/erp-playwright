@@ -51,11 +51,8 @@ export class BusinessPage {
 
         const secondResult = popup.getByRole('textbox', { name: '상세주소' });
         await secondResult.fill('123');
-        
+
         await popup.getByRole('link', { name: '주소입력' }).click();
-        // 6. Sau khi click kết quả, popup sẽ tự đóng. 
-        // Chúng ta đợi nó đóng hẳn để tránh lỗi xung đột trên trang chính
-        await popup.waitForEvent('close');
 
         await this.page.getByRole('textbox', { name: '상세 주소' }).fill(data.detailedAddress);
         await this.page.getByRole('textbox', { name: '담당자명' }).fill(data.contactName);

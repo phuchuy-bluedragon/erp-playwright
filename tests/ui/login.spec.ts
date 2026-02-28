@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../.././pages/LoginPage';
 
 test('Verify admin can login and see raw material codes', async ({ page }) => {
   const loginPage = new LoginPage(page);
