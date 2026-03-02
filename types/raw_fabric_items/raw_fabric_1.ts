@@ -32,7 +32,7 @@ export const rawFabricTestData: RawFabricItemData1[] = [
         remarks: `비고_${Math.random().toString(36).substring(7)}_1`,
         yarns: [
             { ratio: '56', loss: '4' },
-            { ratio: '26', loss: '13.6' },
+            { ratio: '44', loss: '13.6' },
         ]
     },
     {
@@ -44,8 +44,8 @@ export const rawFabricTestData: RawFabricItemData1[] = [
         itemName: `${nowFmt}_2`,
         remarks: `비고_${Math.random().toString(36).substring(7)}_2`,
         yarns: [
-            { ratio: '0', loss: '4.8' },
-            { ratio: '12', loss: '13.6' },
+            { ratio: '27', loss: '4.8' },
+            { ratio: '73', loss: '13.6' },
         ]
     }
 ];
