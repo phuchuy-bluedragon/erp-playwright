@@ -1,0 +1,660 @@
+[
+    {
+        "user_id": "string",
+        "type": "string",
+        "fabric": {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "raw_fabric": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "fabric_part": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "name": "string",
+                    "recordstatus": 1073741824
+                },
+                "business_category": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string"
+                },
+                "produced_by": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "string",
+                    "business_category": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.310Z",
+                        "updateddate": "2026-03-20T16:20:03.310Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    },
+                    "partner_name": "string",
+                    "business_reg_no": "string",
+                    "tel": "string",
+                    "fax": "string",
+                    "head_office_address": "string",
+                    "detailed_address": "string",
+                    "contact_name": "string",
+                    "jobtitle": "string",
+                    "contact_person": "string",
+                    "contact_email": "string",
+                    "vendor_pic": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.310Z",
+                        "updateddate": "2026-03-20T16:20:03.310Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "string",
+                        "name": "string",
+                        "email": "string",
+                        "password": "string",
+                        "contact": "string",
+                        "role": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "string",
+                            "name": "string",
+                            "editable": true,
+                            "readable": true,
+                            "permissions": [
+                                {
+                                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                    "createddate": "2026-03-20T16:20:03.310Z",
+                                    "updateddate": "2026-03-20T16:20:03.310Z",
+                                    "recordstatus": 1073741824,
+                                    "user_id": "string",
+                                    "editable": true,
+                                    "readable": true,
+                                    "role": "string",
+                                    "page": {
+                                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                        "createddate": "2026-03-20T16:20:03.310Z",
+                                        "updateddate": "2026-03-20T16:20:03.310Z",
+                                        "recordstatus": 1073741824,
+                                        "user_id": "string",
+                                        "page": "string",
+                                        "route": "string",
+                                        "editable": true,
+                                        "readable": true
+                                    }
+                                }
+                            ]
+                        },
+                        "department": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string",
+                            "type": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            }
+                        },
+                        "employmentstatus": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string",
+                            "type": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            }
+                        },
+                        "jobtitle": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string",
+                            "type": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            }
+                        },
+                        "contracttype": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string",
+                            "type": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            }
+                        },
+                        "hireddate": "string",
+                        "exitdate": "string",
+                        "bankname": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string",
+                            "type": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            }
+                        },
+                        "accountnumber": "string",
+                        "accountholder": "string",
+                        "employeeId": "string",
+                        "autoeid": 1073741824,
+                        "photo": "string"
+                    },
+                    "vat_status": "string",
+                    "remarks": "string",
+                    "transaction_closed": "string",
+                    "bank_name": "string",
+                    "account_holder": "string",
+                    "displayname": "string",
+                    "account_number": "string"
+                },
+                "prod_unit": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": 1073741824
+                },
+                "sale_unit": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": 1073741824
+                },
+                "discontinued": "string",
+                "item_name": "string",
+                "sale_item_name": "string",
+                "remarks": "string",
+                "yarn_compositions": [
+                    {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.310Z",
+                        "updateddate": "2026-03-20T16:20:03.310Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "string",
+                        "yarn": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.310Z",
+                            "updateddate": "2026-03-20T16:20:03.310Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "string",
+                            "category": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.310Z",
+                                "updateddate": "2026-03-20T16:20:03.310Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "name": "string"
+                            },
+                            "name": "string",
+                            "color": "string",
+                            "note": "string"
+                        },
+                        "ratio": 0.1,
+                        "loss": 0.1,
+                        "raw_fabric": "string"
+                    }
+                ]
+            },
+            "loss": 0.1,
+            "prod_spec": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.310Z",
+                "updateddate": "2026-03-20T16:20:03.310Z",
+                "recordstatus": 1073741824,
+                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string",
+                "type": 1073741824
+            },
+            "prod_cost": 0.1,
+            "prod_unit": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.310Z",
+                "updateddate": "2026-03-20T16:20:03.310Z",
+                "recordstatus": 1073741824,
+                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string",
+                "type": 1073741824
+            },
+            "sale_unit": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.310Z",
+                "updateddate": "2026-03-20T16:20:03.310Z",
+                "recordstatus": 1073741824,
+                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string",
+                "type": 1073741824
+            },
+            "print_design": "string",
+            "color": "string",
+            "bt_no": "string",
+            "discontinue_in_prod": "string",
+            "limited_value": 0.1,
+            "limited_unit": "string",
+            "limited_type": "string",
+            "remarks": "string"
+        },
+        "sale_date": "string",
+        "sale_type": "Rolls",
+        "sale_amount": 0.1,
+        "sale_unit": "string",
+        "unit_price": 0.1,
+        "supply_value": 0.1,
+        "value_added": "string",
+        "vat": 0.1,
+        "total": 0.1,
+        "delivery_address": {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "createddate": "2026-03-20T16:20:03.310Z",
+            "updateddate": "2026-03-20T16:20:03.310Z",
+            "recordstatus": 1073741824,
+            "user_id": "string",
+            "address_name": "string",
+            "company_category": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.310Z",
+                "updateddate": "2026-03-20T16:20:03.310Z",
+                "recordstatus": 1073741824,
+                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string"
+            },
+            "company_name": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.310Z",
+                "updateddate": "2026-03-20T16:20:03.310Z",
+                "recordstatus": 1073741824,
+                "user_id": "string",
+                "business_category": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.310Z",
+                    "updateddate": "2026-03-20T16:20:03.310Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string"
+                },
+                "partner_name": "string",
+                "business_reg_no": "string",
+                "tel": "string",
+                "fax": "string",
+                "head_office_address": "string",
+                "detailed_address": "string",
+                "contact_name": "string",
+                "jobtitle": "string",
+                "contact_person": "string",
+                "contact_email": "string",
+                "vendor_pic": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "string",
+                    "name": "string",
+                    "email": "string",
+                    "password": "string",
+                    "contact": "string",
+                    "role": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "string",
+                        "name": "string",
+                        "editable": true,
+                        "readable": true,
+                        "permissions": [
+                            {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.311Z",
+                                "updateddate": "2026-03-20T16:20:03.311Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "string",
+                                "editable": true,
+                                "readable": true,
+                                "role": "string",
+                                "page": {
+                                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                    "createddate": "2026-03-20T16:20:03.311Z",
+                                    "updateddate": "2026-03-20T16:20:03.311Z",
+                                    "recordstatus": 1073741824,
+                                    "user_id": "string",
+                                    "page": "string",
+                                    "route": "string",
+                                    "editable": true,
+                                    "readable": true
+                                }
+                            }
+                        ]
+                    },
+                    "department": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string",
+                        "type": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string"
+                        }
+                    },
+                    "employmentstatus": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string",
+                        "type": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string"
+                        }
+                    },
+                    "jobtitle": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string",
+                        "type": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string"
+                        }
+                    },
+                    "contracttype": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string",
+                        "type": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string"
+                        }
+                    },
+                    "hireddate": "string",
+                    "exitdate": "string",
+                    "bankname": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string",
+                        "type": {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "name": "string"
+                        }
+                    },
+                    "accountnumber": "string",
+                    "accountholder": "string",
+                    "employeeId": "string",
+                    "autoeid": 1073741824,
+                    "photo": "string"
+                },
+                "vat_status": "string",
+                "remarks": "string",
+                "transaction_closed": "string",
+                "bank_name": "string",
+                "account_holder": "string",
+                "displayname": "string",
+                "account_number": "string"
+            },
+            "contact_info": "string",
+            "address": "string",
+            "address_detail": "string",
+            "note": "string",
+            "delivery_type": "string"
+        },
+        "style_no": "string",
+        "company_name": {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "createddate": "2026-03-20T16:20:03.311Z",
+            "updateddate": "2026-03-20T16:20:03.311Z",
+            "recordstatus": 1073741824,
+            "user_id": "string",
+            "business_category": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.311Z",
+                "updateddate": "2026-03-20T16:20:03.311Z",
+                "recordstatus": 1073741824,
+                "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string"
+            },
+            "partner_name": "string",
+            "business_reg_no": "string",
+            "tel": "string",
+            "fax": "string",
+            "head_office_address": "string",
+            "detailed_address": "string",
+            "contact_name": "string",
+            "jobtitle": "string",
+            "contact_person": "string",
+            "contact_email": "string",
+            "vendor_pic": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.311Z",
+                "updateddate": "2026-03-20T16:20:03.311Z",
+                "recordstatus": 1073741824,
+                "user_id": "string",
+                "name": "string",
+                "email": "string",
+                "password": "string",
+                "contact": "string",
+                "role": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "string",
+                    "name": "string",
+                    "editable": true,
+                    "readable": true,
+                    "permissions": [
+                        {
+                            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                            "createddate": "2026-03-20T16:20:03.311Z",
+                            "updateddate": "2026-03-20T16:20:03.311Z",
+                            "recordstatus": 1073741824,
+                            "user_id": "string",
+                            "editable": true,
+                            "readable": true,
+                            "role": "string",
+                            "page": {
+                                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                "createddate": "2026-03-20T16:20:03.311Z",
+                                "updateddate": "2026-03-20T16:20:03.311Z",
+                                "recordstatus": 1073741824,
+                                "user_id": "string",
+                                "page": "string",
+                                "route": "string",
+                                "editable": true,
+                                "readable": true
+                            }
+                        }
+                    ]
+                },
+                "department": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    }
+                },
+                "employmentstatus": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    }
+                },
+                "jobtitle": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    }
+                },
+                "contracttype": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    }
+                },
+                "hireddate": "string",
+                "exitdate": "string",
+                "bankname": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "createddate": "2026-03-20T16:20:03.311Z",
+                    "updateddate": "2026-03-20T16:20:03.311Z",
+                    "recordstatus": 1073741824,
+                    "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "name": "string",
+                    "type": {
+                        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "createddate": "2026-03-20T16:20:03.311Z",
+                        "updateddate": "2026-03-20T16:20:03.311Z",
+                        "recordstatus": 1073741824,
+                        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                        "name": "string"
+                    }
+                },
+                "accountnumber": "string",
+                "accountholder": "string",
+                "employeeId": "string",
+                "autoeid": 1073741824,
+                "photo": "string"
+            },
+            "vat_status": "string",
+            "remarks": "string",
+            "transaction_closed": "string",
+            "bank_name": "string",
+            "account_holder": "string",
+            "displayname": "string",
+            "account_number": "string"
+        },
+        "qty_input_by_section": [
+            {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createddate": "2026-03-20T16:20:03.311Z",
+                "updateddate": "2026-03-20T16:20:03.311Z",
+                "recordstatus": 1073741824,
+                "user_id": "string",
+                "qty1": 1073741824,
+                "qty2": 1073741824,
+                "qty3": 1073741824,
+                "qty4": 1073741824,
+                "qty5": 1073741824,
+                "qty6": 1073741824,
+                "qty7": 1073741824,
+                "qty8": 1073741824,
+                "qty9": 1073741824,
+                "qty10": 1073741824,
+                "total": 1073741824,
+                "avg": 0.1,
+                "sale_history": "string"
+            }
+        ],
+        "qty_input_by_section_total": 1073741824,
+        "note": "string"
+    }
+]

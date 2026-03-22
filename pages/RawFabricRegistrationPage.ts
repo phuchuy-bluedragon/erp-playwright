@@ -1,24 +1,16 @@
 import { Page, Locator } from '@playwright/test';
 import { YarnComposition, RawFabricItemData1 } from '../types/raw_fabric_items/raw_fabric_1';
 import { RawFabricItemData2 } from '../types/raw_fabric_items/raw_fabric_2';
+import { BasePage } from './BasePage';
 
-
-export class RawFabricPage {
-    readonly page: Page;
+export class RawFabricPage extends BasePage {
     readonly registerBtn1: Locator;
     readonly registerBtn2: Locator;
-    readonly confirmBtn: Locator;
 
     constructor(page: Page) {
-        this.page = page;
+        super(page);
         this.registerBtn1 = page.getByRole('button', { name: '신규 등록(품목)' });
         this.registerBtn2 = page.getByRole('button', { name: '신규 등록(완사입)' });
-        this.confirmBtn = page.getByRole('button', { name: '확인' });
-    }
-
-    async selectOption(label: string, optionName: string) {
-        await this.page.getByRole('combobox', { name: label }).click();
-        await this.page.getByRole('option', { name: optionName }).click();
     }
 
     async fillForm1(data: RawFabricItemData1) {
@@ -73,9 +65,5 @@ export class RawFabricPage {
             // Đợi UI cập nhật một chút (ERP thường cần thời gian tính toán tổng %)
             await this.page.waitForTimeout(500);
         }
-    }
-
-    async submit() {
-        await this.confirmBtn.click();
     }
 }

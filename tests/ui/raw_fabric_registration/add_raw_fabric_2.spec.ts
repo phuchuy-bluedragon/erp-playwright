@@ -17,19 +17,6 @@ test.describe('ERP - Add Raw Fabric (완사입)', () => {
 
     // Đảm bảo tiêu đề test là DUY NHẤT bằng cách thêm index i
     test(`Case ${i + 1}: Create raw fabric item - ${data.fabricPart}`, async ({ page }) => {
-      // const rawFabricPage = new RawFabricPage(page);
-
-      // await page.getByRole('link', { name: '품목(생지) 코드' }).click();
-
-      // await rawFabricPage.registerBtn2.click();
-
-      // // Truyền finalData (đã có name mới) vào form
-      // await rawFabricPage.fillForm2(data);
-
-      // await rawFabricPage.submit();
-
-      // await expect(page.getByText('Successfully created!')).toBeVisible();
-
       const fabricPage = new RawFabricPage(page);
 
       await page.getByRole('link', { name: '품목(생지) 코드' }).click();
