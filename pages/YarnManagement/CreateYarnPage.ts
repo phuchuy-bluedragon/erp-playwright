@@ -65,7 +65,7 @@ export class CreateYarnPage extends BasePage {
         // 1. Đơn vị số lượng -> 2. Đơn vị tiền tệ
         const selectButtons = this.dialog.getByRole('combobox').filter({ hasText: /^선택$/ });
         this.quantityUnitBtn = selectButtons.nth(0);
-        this.priceUnitBtn = selectButtons.nth(1);
+        this.priceUnitBtn = selectButtons.nth(0);
 
         // VAT Button: Tìm theo label "부가세" thay vì text bên trong nút (vì text có thể là "반영" hoặc "미반영")
         // Label "부가세" có for="_r_bb_-form-item" khớp với id của nút
