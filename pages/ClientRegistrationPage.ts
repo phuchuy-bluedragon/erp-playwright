@@ -39,6 +39,10 @@ export class ClientPage extends BasePage {
         // 단톡 동의
         await this.selectOption('단톡동의', data.groupChatConsent);
 
+        // (당사) 업체담당자
+        await this.page.getByRole('combobox', { name: '(당사) 업체담당자' }).click();
+        await this.page.getByRole('option').first().click();
+
         // 추천인 정보
         await this.page.locator('input[name="company"]').fill(data.referrerCompany);
         await this.page.locator('input[name="brand"]').fill(data.referrerBrand);

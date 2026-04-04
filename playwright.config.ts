@@ -15,6 +15,8 @@ dotenv.config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  /* Timeout cho mỗi test case (60 giây) */
+  timeout: 60 * 1000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -33,25 +35,33 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-
-    viewport: { width: 1920, height: 940 },
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'], viewport: { width: 1920, height: 940 } },
+      use: {
+        ...devices['Desktop Chrome'],
+        // Đặt viewport: null và thêm --start-maximized để trình duyệt chiếm trọn màn hình laptop của bạn mà không bị tràn
+        viewport: null,
+        // Phải đặt undefined vì Playwright không cho phép dùng scale factor khi viewport là null
+        deviceScaleFactor: undefined,
+        launchOptions: {
+          // Ép trình duyệt sử dụng tỉ lệ 100% (không bị scaling bởi Windows)
+          args: ['--start-maximized', '--force-device-scale-factor=1']
+        },
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'], viewport: { width: 1920, height: 940 } },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'], viewport: { width: 1920, height: 940 } },
+      // Firefox sử dụng tham số khác một chút để tối đa hóa
+      use: {
+        ...devices['Desktop Firefox'],
+        viewport: { width: 1920, height: 940 },
+        deviceScaleFactor: 1
+      },
     },
 
     /* Test against mobile viewports. */

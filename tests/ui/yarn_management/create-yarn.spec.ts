@@ -43,6 +43,6 @@ test.describe('Yarn Management - Create Yarn Invoice', () => {
         await expect(createPage.dialog).toBeHidden();
 
         // Kiểm tra thông báo thành công (Toast message)
-        await expect(page.getByText('성공적으로 등록되었습니다')).toBeVisible(); // Hoặc text tương ứng
+        await expect(page.getByText('Successfully created!')).toBeVisible(); // Hoặc text tương ứng
     });
 });

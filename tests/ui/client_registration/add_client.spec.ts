@@ -21,6 +21,8 @@ test.describe('ERP - Add Client', () => {
 
             await page.getByRole('link', { name: '고객사코드' }).click();
 
+            await page.waitForTimeout(1000);
+
             await clientPage.registerBtn.click();
 
             // Truyền finalData (đã có name mới) vào form

@@ -31,6 +31,8 @@ test.describe('ERP - Add Fabric (품목)', () => {
         await page.locator('div').filter({ hasText: /^스와치$/ }).first().click();
       }
 
+      await page.waitForTimeout(2000);
+
       // Truyền finalData (đã có name mới) vào form
       await fabricPage.fillForm1(data);
 
