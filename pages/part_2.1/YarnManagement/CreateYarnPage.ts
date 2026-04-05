@@ -1,5 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
-import { BasePage } from '../BasePage';
+import { BasePage } from '../../BasePage';
 
 export interface YarnInvoiceData {
     date?: string;
@@ -61,14 +61,10 @@ export class CreateYarnPage extends BasePage {
         this.receiverCategoryBtn = this.dialog.getByRole('combobox').filter({ hasText: '구분 선택' });
         this.receiverCompanyBtn = this.dialog.getByRole('combobox').filter({ hasText: '업체명 선택' });
 
-        // Các nút "Chọn" (선택) đơn vị xuất hiện theo thứ tự:
-        // 1. Đơn vị số lượng -> 2. Đơn vị tiền tệ
         const selectButtons = this.dialog.getByRole('combobox').filter({ hasText: /^선택$/ });
         this.quantityUnitBtn = selectButtons.nth(0);
         this.priceUnitBtn = selectButtons.nth(0);
 
-        // VAT Button: Tìm theo label "부가세" thay vì text bên trong nút (vì text có thể là "반영" hoặc "미반영")
-        // Label "부가세" có for="_r_bb_-form-item" khớp với id của nút
         this.vatBtn = this.dialog.getByRole('combobox', { name: '부가세' });
 
         this.saveBtn = this.dialog.getByRole('button', { name: '확인' });
@@ -88,10 +84,14 @@ export class CreateYarnPage extends BasePage {
         // 2. Tìm và chọn nguyên liệu
         if (data.yarnName) {
             await this.yarnSearchInput.fill(data.yarnName);
-            // Đợi danh sách lọc xong và click kết quả đầu tiên
-            await this.firstYarnResult.waitFor({ state: 'visible' });
-            await this.firstYarnResult.click();
+            
+            // Tìm row cụ thể chứa text của yarnName để tránh click nhầm kết quả cũ
+            const targetRow = this.dialog.locator('div[data-yarn-id]').filter({ hasText: data.yarnName }).first();
+            await targetRow.waitFor({ state: 'visible', timeout: 5000 });
+            await targetRow.click();
         }
+
+        await this.page.waitForTimeout(500);
 
         // 3. Thông tin bên nhận (Receiver)
         if (data.receiverCategory) {
@@ -116,6 +116,7 @@ export class CreateYarnPage extends BasePage {
         if (data.price) {
             await this.unitPriceInput.fill(data.price.toString());
         }
+        await this.page.waitForTimeout(300);
         if (data.priceUnit) {
             await this.priceUnitBtn.click();
             await this.page.getByRole('option', { name: data.priceUnit }).click();
@@ -124,7 +125,9 @@ export class CreateYarnPage extends BasePage {
         // 6. VAT
         if (data.vat) {
             await this.vatBtn.click();
-            await this.page.getByRole('option', { name: data.vat }).click();
+            const option = this.page.getByRole('option', { name: data.vat, exact: true });
+            await option.waitFor({ state: 'visible' });
+            await option.click();
         }
 
         // 7. Ghi chú

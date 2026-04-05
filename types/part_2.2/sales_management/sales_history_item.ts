@@ -1,4 +1,4 @@
-import { SalesItemData } from '../../../pages/SalesManagement/CreateSalesPage';
+import { SalesItemData } from '../../../pages/part_2.2/SalesManagement/CreateSalesPage';
 
 export const salesTestData: SalesItemData[] = [
     {

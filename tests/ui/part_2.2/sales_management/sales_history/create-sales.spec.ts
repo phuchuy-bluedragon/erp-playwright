@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../../../../pages/LoginPage';
-import { CreateSalesPage } from '../../../../../pages/SalesManagement/CreateSalesPage';
+import { CreateSalesPage } from '../../../../../pages/part_2.2/SalesManagement/CreateSalesPage';
 import { salesTestData } from '../../../../../types/part_2.2/sales_management/sales_history_item';
 
 test.describe('Sales Management - Create Sales Item', () => {
